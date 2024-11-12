@@ -1,5 +1,7 @@
 package com.example.firstsample.models;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.stereotype.Component;
@@ -7,7 +9,7 @@ import org.springframework.stereotype.Component;
 @Getter
 @Setter
 @Component
-public class Category {
-    private long id;
+@Entity
+public class Category extends BaseModel{
     private String description;
 }
